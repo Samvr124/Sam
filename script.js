@@ -41,3 +41,4 @@ document.getElementById("draaiRad").addEventListener("click", function() {
         };
     };
 });
+
