@@ -38,7 +38,9 @@ document.getElementById("draaiRad").addEventListener("click", function() {
             // Verberg de grappige video en toon de foto
             document.getElementById("grapjeVideo").style.display = "none";
             document.getElementById("he-said-yes").style.display = "block";
+
+            // Maak extra zeker dat het rad ook wordt verborgen
+            document.getElementById("rad-container").style.display = "none";  // Zorg dat het rad verdwijnt
         };
     };
 });
-
