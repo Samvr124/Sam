@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzel Actie</title>
+    <script src="script.js" defer></script>
+    <style>
+        /* Zorg ervoor dat de afbeelding niet in een rechthoekig blok wordt weergegeven */
+        #puzzel {
+            display: block;
+            margin: 0 auto; /* Centreer de afbeelding horizontaal */
+            max-width: 100%; /* Zorg ervoor dat de afbeelding responsief is */
+            height: auto; /* Houd de verhoudingen van de afbeelding intact */
+        }
+
+        /* Verborgen elementen voor later */
+        #rad-container, #grapjeVideo, #he-said-yes {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Los de puzzel op!</h1>
+
+    <!-- Vraag en de afbeelding van de puzzel -->
+    <div id="puzzel-container">
+        <img id="puzzel" src="puzzle-image.jpg" alt="Puzzel afbeelding">
+    </div>
+
+    <!-- Formulier voor het antwoord -->
+    <div id="antwoord-container">
+        <label for="antwoord">Wat is het antwoord?:</label>
+        <input type="text" id="antwoord" placeholder="Vul je antwoord in">
+        <button id="controleer-antwoord">Controleer antwoord</button>
+    </div>
+
+    <!-- Knop voor het draaien van het rad -->
+    <div id="rad-container">
+        <button id="draaiRad">Draai het Rad!</button>
+    </div>
+
+    <!-- Video voor het rad draaien -->
+    <video id="radVideo" width="400" controls style="display:none;">
+        <source src="rad-draait.mp4" type="video/mp4">
+        Je browser ondersteunt deze video niet.
+    </video>
+
+    <!-- Video voor grappige reactie -->
+    <video id="grapjeVideo" width="400" controls style="display:none;">
+        <source src="grapje.mp4" type="video/mp4">
+        Je browser ondersteunt deze video niet.
+    </video>
+
+    <!-- Foto die verschijnt als het juiste antwoord wordt ingevoerd -->
+    <div id="resultaat">
+        <img id="he-said-yes" src="he-said-yes.jpg" alt="He said yes!" style="width: 300px; display:none;">
+    </div>
+
+</body>
+</html>

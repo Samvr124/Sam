@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+#puzzel-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#antwoord-container {
+    margin-top: 20px;
+}
+
+#rad-container {
+    margin-top: 30px;
+}
+
+#resultaat {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+<style>
+    /* Zorg ervoor dat de afbeelding niet in een rechthoekig blok wordt weergegeven */
+    #puzzel {
+        display: block;
+        margin: 0 auto; /* Centreer de afbeelding horizontaal */
+        max-width: 80%; /* Beperk de breedte van de afbeelding tot 80% van de schermbreedte */
+        height: auto; /* Houd de verhoudingen van de afbeelding intact */
+    }
+
+    /* Verborgen elementen voor later */
+    #rad-container, #grapjeVideo, #he-said-yes {
+        display: none;
+    }
+</style>
